@@ -1,4 +1,4 @@
-export const riceData = [
+const riceData = [
     {
         name: "Kadhi Rice",
         price: 15,
@@ -6,9 +6,9 @@ export const riceData = [
         soldOut: false,
     },
     {
-        name: "Khichdi",
+        name: "Tomato Rice",
         price: 10,
-        photoName: "rices/Khichdi.jpg",
+        photoName: "rices/Tomato Rice.jpg",
         soldOut: false,
     },
     {
@@ -30,9 +30,11 @@ export const riceData = [
         soldOut: true,
     },
     {
-        name: "Tomato Rice",
+        name: "Veg Fried Rice",
         price: 18,
-        photoName: "rices/Tomato Rice.jpg",
+        photoName: "rices/Veg Fried Rice.jpg",
         soldOut: false,
     },
 ];
+
+export default riceData;
