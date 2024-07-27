@@ -1,12 +1,21 @@
+const formatCurrency = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+});
+
 function Rice({ riceObj }) {
     return (
-        <div className="rice">
-            <img src={riceObj.imgName} alt={riceObj.name} />
-            <div>
-                <h3>{riceObj.name}</h3>
-                <span>{riceObj.price}</span>
+        <li className="flex gap-4 py-2">
+            <img src={riceObj.imgName} alt={riceObj.name} className="h-24" />
+            <div className="flex grow flex-col pt-0.5">
+                <h3 className="font-medium">{riceObj.name}</h3>
+                <div className="mt-auto flex items-center justify-between">
+                    <p className="text-sm">
+                        {formatCurrency.format(riceObj.price)}
+                    </p>
+                </div>
             </div>
-        </div>
+        </li>
     );
 }
 
