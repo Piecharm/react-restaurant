@@ -3,7 +3,7 @@ import Menu from "./components/Menu";
 
 function App() {
     return (
-        <div className="bg-[#dfd9d9]">
+        <div className="bg-[#dfd9d9] ">
             <Header />
             <Menu />
         </div>
