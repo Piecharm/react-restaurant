@@ -4,10 +4,11 @@ import Rice from "./Rice";
 function Menu() {
     const rices = riceData;
     return (
-        <main>
-            <h2>Our menu</h2>
-            <p>Authentic Rice Dishes Delivered To Your Doorstep.</p>
-            <ul className="px-4">
+        <main className="max-w-full mx-auto py-10 px-4 text-center ">
+            <div className="mb-5 font-semibold text-[#d11b27]">
+                <h2 className="text-2xl">Our menu</h2>
+            </div>
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {rices.map((rice) => (
                     <Rice riceObj={rice} key={rice.name} />
                 ))}
