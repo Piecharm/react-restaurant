@@ -5,7 +5,7 @@ const formatCurrency = new Intl.NumberFormat("en-US", {
 
 function Rice({ riceObj }) {
     return (
-        <div className="max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer">
+        <div className="max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer my-2">
             <img
                 src={riceObj.imgName}
                 alt={riceObj.name}
