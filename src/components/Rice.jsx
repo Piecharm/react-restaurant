@@ -16,6 +16,18 @@ function Rice({ riceObj }) {
                 <p className="text-sm pt-1">
                     {formatCurrency.format(riceObj.price)}
                 </p>
+                <div className="flex items-center gap-2">
+                    {Array(5)
+                        .fill(1)
+                        .map((_, index) => (
+                            <img
+                                src="/star.svg"
+                                key={index}
+                                alt="star"
+                                className="w-5 h-5"
+                            />
+                        ))}
+                </div>
             </div>
         </div>
     );
