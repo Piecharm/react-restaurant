@@ -1,16 +1,25 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Home from "./pages/Home";
 import Menu from "./components/Menu";
 
 function App() {
     return (
-        <div className="bg-[#dfd9d9]">
-            <Header />
-            <Hero />
-            <Menu />
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <div className="bg-[#dfd9d9]">
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />}>
+                        Home
+                    </Route>
+                    <Route path="/menu" element={<Menu />}>
+                        Menu
+                    </Route>
+                </Routes>
+                <Footer />
+            </div>
+        </BrowserRouter>
     );
 }
 

@@ -1,4 +1,4 @@
-import riceData from "../data";
+import riceData from "../../data/data";
 import Rice from "./Rice";
 
 function Menu() {

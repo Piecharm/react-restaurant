@@ -1,4 +1,4 @@
-function Hero() {
+function Home() {
     return (
         <div className="max-w-screen-xl px-4 py-10 mx-auto mt-8 sm:mt-12 sm:px-6 md:mt-16">
             <div className="lg:grid lg:grid-cols-12 lg:gap-8">
@@ -36,4 +36,4 @@ function Hero() {
     );
 }
 
-export default Hero;
+export default Home;
